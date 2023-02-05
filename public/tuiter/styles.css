@@ -1,0 +1,35 @@
+.wd-border-grey {
+    border-color: #475154;
+    border-style: solid;
+}
+
+.wd-full-page {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.wd-width-75 {
+    width: 75%;
+    float: left;
+}
+
+.wd-width-25 {
+    width: 25%;
+    float: left;
+}
+
+.wd-left-offset {
+    padding-left: 16px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.wd-right-offset {
+    padding-right: 12px;
+}
+
+.wd-ellipsis {
+    text-align: right;
+}
