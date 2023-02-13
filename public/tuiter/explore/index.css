@@ -13,6 +13,10 @@
         height: 80px;
         width: 80px;
     }
+
+    .wd-btn-width-sm {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -38,7 +42,7 @@
     }
     
     .wd-btn-width-lg {
-        width: auto;
+        width: 100%;
     }
 }
 
