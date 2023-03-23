@@ -9,13 +9,13 @@ const NavigationSidebar = ({ active = "explore" }) => {
       <a className="list-group-item" href="#"><FontAwesomeIcon icon={faTwitter}/> <span className="d-xl-inline d-none">Tuiter</span></a>
       <a
         className={`list-group-item
-                         ${active === "home" ? "active" : ""}`} href="#"
+                         ${active === "home" ? "active" : ""}`} href="/tuiter/home"
       >
         <FontAwesomeIcon icon={faHouseChimney}/> <span className="d-xl-inline d-none">Home</span>
       </a>
       <a
         className={`list-group-item
-                         ${active === "explore" ? "active" : ""}`} href="#"
+                         ${active === "explore" ? "active" : ""}`} href="/tuiter"
       >
         <FontAwesomeIcon icon={faHashtag}/> <span className="d-xl-inline d-none">Explore</span>
       </a>
