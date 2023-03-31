@@ -10,12 +10,16 @@ import {
   faComment,
 } from "@fortawesome/free-regular-svg-icons";
 import { useDispatch } from "react-redux";
-import { toggleLikeTuit } from "./tuits-reducer";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
   const toggleLikeTuitHandler = (tuit) => {
-    dispatch(toggleLikeTuit(tuit));
+    dispatch(updateTuitThunk({
+      ...tuit,
+      likes: !tuit.liked ? tuit.likes + 1 : tuit.likes - 1,
+      liked: !tuit.liked
+    }));
   };
   return (
     <div className="row mt-2">

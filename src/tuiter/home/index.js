@@ -5,10 +5,10 @@ import whoReducer from "../reducers/who-reducer";
 import tuitsReducer from "../tuits/tuits-reducer";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import TuitsList from "../tuits";
+import TuitsList from "../tuits/tuit-list";
 import WhatsHappening from "./whats-happening";
 const store = configureStore({
-  reducer: { who: whoReducer, tuits: tuitsReducer },
+  reducer: { who: whoReducer, tuitsData: tuitsReducer },
 });
 
 function HomeComponent() {
